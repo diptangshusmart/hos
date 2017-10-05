@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <title>HOS</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="  https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	 <style>
+  .color-light{
+    color:#FFFFFF;
+}
+
+/*Colored Content Boxes
+------------------------------------*/
+.servive-block {
+  padding: 20px 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  
+  position: relative;
+
+line-height: 1.4em;
+}
+
+.servive-block p,
+.servive-block h2 {
+  color: #fff;
+}
+
+.servive-block h2 a:hover{
+  text-decoration: none;
+}
+
+.servive-block-light,
+.servive-block-default {
+  background: #fafafa;
+  border: solid 1px #eee; 
+}
+
+.servive-block-default:hover {
+  box-shadow: 0 0 8px #eee;
+}
+
+.servive-block-light p,
+.servive-block-light h2,
+.servive-block-default p,
+.servive-block-default h2 {
+  color: #555;
+}
+
+.servive-block-u {
+  background: #72c02c;
+}
+.servive-block-blue {
+  background: #3498db;
+}
+.servive-block-red {
+  background: #e74c3c;
+}
+.servive-block-sea {
+  background: #1abc9c;
+}
+.servive-block-grey {
+  background: #95a5a6;
+}
+.servive-block-yellow {
+  background: #f1c40f;
+}
+.servive-block-orange {
+  background: #e67e22;
+}
+.servive-block-green {
+  background: #66cc00;
+}
+.servive-block-purple {
+  background: #9b6bcc;
+}
+.servive-block-aqua {
+  background: #27d7e7;
+}
+.servive-block-brown {
+  background: #9c8061;
+}
+.servive-block-dark-blue {
+  background: #4765a0;
+}
+.servive-block-light-green {
+  background: #79d5b3;
+}
+.servive-block-dark {
+  background: #555;
+}
+.servive-block-light {
+  background: #ecf0f1;
+}
+  </style>
+</head>
+
+<body class="app">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">Brand</a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li class="active" role="presentation"><a href="#">First Item</a></li>
+                    <li role="presentation"><a href="#">Second Item</a></li>
+                    <li role="presentation"><a href="#">Third Item</a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li class="active" role="presentation"><a href="#">First Item</a></li>
+                    <li role="presentation"><a href="#">Second Item</a></li>
+                    <li role="presentation"><a href="#">Third Item</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="alert alert-danger" role="alert">
+	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+	<span>Vehicle <strong>Disconnected</strong></span>
+        <button class="btn btn-success btn-sm" type="button">Connect</button>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                
+                <form>
+				<label>Set status</label>
+                    <select class="form-control">
+                        <optgroup label="This is a group">
+                            <option value="12" selected="">This is item 1</option>
+                            <option value="13">This is item 2</option>
+                            <option value="14">This is item 3</option>
+                        </optgroup>
+                    </select>
+                </form><br/>
+				<section class="servive-block servive-block-aqua">
+				<i class="icon-2x color-light fa fa-bell-o"></i><br/>
+				Time Left
+				</section>
+            </div>
+            
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+			<ul class="list-group">
+					 
+					 <li class="list-group-item "><span class="fa fa-user-circle fa-1x " > Ratan Baid<span></li>
+					 <li class="list-group-item "><span class="fa fa-truck fa-1x" > Truck123<span></li>
+					 <li class="list-group-item "><span class="fa fa-car fa-1x" > None<span></li>
+
+					 </ul>
+			<button type="button" class="btn btn-info btn-lg">START BREAK</button>
+			<div class="btn-group">
+  <button  data-toggle="modal" data-target="#myModal" type="button" class="btn btn-primary">Logs</button>
+  <button type="button" class="btn btn-primary">Options</button>
+  <button type="button" class="btn btn-primary">DVIR</button>
+  <button type="button" class="btn btn-primary">Roadside Inspection</button>
+</div>
+			</div>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <ul class="nav nav-tabs">
+            <li class="active"><a class="text-primary bg-primary" href="#tab-1" role="tab" data-toggle="tab">Recap</a></li>
+            <li><a class="bg-primary" href="#tab-2" role="tab" data-toggle="tab">Shift Cycle</a></li>
+           
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" role="tabpanel" id="tab-1">
+                <p>First tab content.</p>
+            </div>
+            <div class="tab-pane" role="tabpanel" id="tab-2">
+                <p>Second tab content.</p>
+            </div>
+            
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Modal Title</h4></div>
+                <div class="modal-body">
+                    <p>The content of your modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+                    <button class="btn btn-primary" type="button">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
