@@ -108,7 +108,7 @@ $(document).ready(function(){
 </script>
 </head>
 
-<body>
+<body class="app">
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">Brand</a>
@@ -257,8 +257,12 @@ $(document).ready(function(){
             </div>
         </div>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+   
+	 <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
 </body>
 
 </html>
